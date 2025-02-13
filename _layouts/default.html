@@ -1,13 +1,41 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
-<link rel="stylesheet" href="../assets/css/devicon.min.css">
-<html lang="en">
-  {% include head.html %}
-  <body>
-      {% include header.html %}
-      <section id="about">
-        {% include about.html %}
-      </section>
-        {{ content }}
-      {% include footer.html %}
-  </body>
+<html>
+{% include head.html %}
+
+<body>
+  {% include navbar.html %}
+  {% include showcase.html %}
+  {% include about.html %}
+  {% include contact.html %}
+  <!--页脚开始-->
+  {% include footer.html %}
+</body>
+<script>
+  var navItems = document.getElementsByClassName('navbar-item'); // 获取所有导航栏项目
+  var heroes = document.getElementsByClassName('hero'); // 获取所有英雄部分
+  const viewOffset = 200; // 视图偏移量
+
+  window.addEventListener("scroll", function (event) {
+    var scroll = this.scrollY; // 获取当前滚动位置
+    var position = window.pageYOffset; // 获取页面偏移量
+
+    for (var i = 0; i < navItems.length; i++) {
+      navItems[i].classList.remove('is-active'); // 移除所有导航栏项目的活动状态
+    }
+
+    for (var i = 0; i < heroes.length; i++) {
+        var sectionTop = heroes[i].offsetTop-viewOffset; // 计算部分顶部位置
+        var sectionBottom = heroes[i].offsetTop + heroes[i].offsetHeight-viewOffset; // 计算部分底部位置
+
+        if (scroll >= sectionTop && scroll < sectionBottom) {
+          navItems[i+1].classList.add('is-active'); // 添加活动状态到当前部分对应的导航栏项目
+      }
+    }
+  });
+</script>
+
 </html>

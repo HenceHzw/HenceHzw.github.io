@@ -1,95 +1,53 @@
-# Jekyll Resume Theme
+# WhatATheme
+**WhatATheme** is a customizable Jekyll Portfolio theme which supports blogging. You can use this theme in order to create an elegant, fully responsive portfolio.
 
-Live demo at https://jekyll-theme-minimal-resume.netlify.app
+#### You can checkout the [**Demo Here**](https://thedevslot.github.io/WhatATheme/) :boom:
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/24d80ae8-c3d9-4645-a6d8-9e97fc8dec3c/deploy-status)](https://app.netlify.com/sites/jekyll-theme-minimal-resume/deploys)
+![WhatATheme](assets/images/meta.jpg)
 
-# Stack
+# Features :sparkles:
+* Free and Easy setup
+* No Coding Required
+* Compatible with [Github Pages](https://pages.github.com/)
+* Responsive and Blogging Ready
+* HTML Compressor using [Jekyll Compress HTML](https://jch.penibelst.de/)
+* Minified CSS using SaSS
+* CMS Admin Support using [Jekyll Admin](https://jekyll.github.io/jekyll-admin/)
+* Supports Latest [Jekyll 4.x](https://jekyllrb.com/) and [Bundler](https://bundler.io/)
+* Stylesheet built using SaSS
+* Comments using Disqus
+* Analytics using Google Analytics
+* Instant Search using [Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search/)
 
-![](https://img.shields.io/badge/jekyll-✓-blue.svg)
-![](https://img.shields.io/badge/html5-✓-blue.svg)
-![](https://img.shields.io/badge/sass-✓-blue.svg)
-![](https://img.shields.io/badge/sweet--scroll-✓-blue.svg)
-![](https://img.shields.io/badge/particle--js-✓-blue.svg)
-![](https://img.shields.io/badge/font--awesome-✓-blue.svg)
-![](https://img.shields.io/badge/devicon-✓-blue.svg)
-![](https://img.shields.io/badge/gulp-✓-blue.svg)
+# Installation :books:
+### System Requirements
+* [Ruby](https://www.ruby-lang.org/en/)
+* [Jekyll](https://jekyllrb.com/)
+> You can read **What is Jekyll** [**here**](https://thedevslot.github.io/WhatATheme/blog/what-is-jekyll-how-to-use-it)
+### Up and Running
+* Fork the [Repository](https://github.com/thedevslot/WhatATheme/)
+* Clone or download the repository into directory of your choice: `git clone https://github.com/thedevslot/WhatATheme.git`
+* Inside the directory run `bundle install`
+* Host WhatATheme locally by running `bundle exec jekyll s`
 
-# Screenshot
+> You can read **How to Install and use WhatATheme?** [**here**](https://thedevslot.github.io/WhatATheme/blog/how-to-install-whatatheme)
 
-<p align="center">
-  <img src="https://github.com/murraco/jekyll-theme-minimal-resume/blob/master/screenshot.png" width="90%" />
-</p>
+[<img src="https://i.imgur.com/TVI946Z.png" width="250" />](https://youtu.be/VfPa2c9kwhQ)
 
-# If this helped, consider buying me a coffee! ☕️
+---
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/murraco)
+### Content Credits :green_heart:
+* [Hero Image](https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) used as a background image in the very first section of Homepage.
+* [Author Image](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png) used in the Author Section.
+* [Font Awesome](https://fontawesome.com/)
+* [Poppins Font](https://fonts.google.com/specimen/Poppins)
+* [Memphis Pattern](https://www.freepik.com/free-vector/memphis-pattern-background_4034913.htm#page=1&query=memphis%20pattern&position=23) used for some Social Media Images and the Favicon.
 
-# Quick Setup
+---
 
-1. Install Jekyll: `gem install jekyll bundler`
-2. Fork this repository and clone your fork
-3. Edit `_config.yml` to personalize your site
+### Credits :bulb:
+* [Sneha Omer](http://sassyecoder.github.io/)
+* [Harsh Trivedi](http://harsh98trivedi.github.io/)
 
-# Settings
-
-You have to fill some informations on `_config.yml` to customize your site:
-
-## Site settings
-```yml
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site
-```
-
-## User settings
-```yml
-username: Lorem Ipsum
-user_description: Software Engineer at Lorem Ipsum Dolor
-user_title: Mauricio Urraco
-email: mauriurraco@gmail.com
-```
-
-> Don't forget to change your URL before you deploy your site!
-
-# Color and Particle Customization
-
-- Color Customization
-  - Edit the `.sass` variables
-- Particle Customization
-  - Edit the json data in particle function in `app.js`
-  - Refer to `Particle.js` for help
-
-# Content
-
-You can (and should) edit the `.html` files for adding your own information, icons, working experience, social links or whatever you want to add. I.e.:
-
-```html
-<a aria-label="My Github" target="_blank" href="https://github.com/murraco">
-  <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-</a>
-```
-
-# Running locally
-
-In order to compile the assets and run `Jekyll` locally you need to follow those steps:
-
-1. Install Jekyll
-2. Run `bundle install`
-3. Run `bundle exec jekyll build`
-4. Start and http-server in the folder `_site`
-
-# Contribution
-
-- Report issues
-- Open pull request with improvements
-- Spread the word
-- Reach out to me directly at <mauriurraco@gmail.com>
-
-# Credits
-
-- [Nathan Randecker](https://github.com/nrandecker)
-
-# Buy me a coffee to show your support!
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/murraco)
+### License
+The contents of this repository are licensed under the [**GNU General Public License v2.0**](https://github.com/thedevslot/WhatATheme/blob/master/LICENSE)
