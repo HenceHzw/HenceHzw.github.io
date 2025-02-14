@@ -22,10 +22,30 @@
                 <i class="fab fa-twitter"></i>Tweet me on Twitter
             </a>
             {% endunless %}
-            <hr>
+            {% unless site.qq_qrcode == %}
+                <a id="contact-button" href="{{site.qq_qrcode}}"
+                    class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+                    target="_blank">
+                    <i class="fab fa-qq"></i>Contact me on QQ
+                </a>
+            {% endunless %}
+            {% unless site.github_username == %}
+                <a id="contact-button" href="http://www.github.com/{{site.github_username}}"
+                    class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+                    target="has-text-black">
+                    <i class="fab fa-github"></i>Visit my Github
+                </a>
+            {% endunless %}
+            
+
+
+
+
+
+            <!-- <hr>
             <h3 class="is-size-5 is-uppercase has-text-weight-semibold has-text-black is-marginless">
                 You Can find me here
-            </h3>
+            </h3> -->
             <div class="column is-full is-size-3">
                 {% unless site.facebook_username == %}
                 <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" class="has-text-black"><i class="fab fa-facebook"></i></a>
@@ -38,9 +58,6 @@
                 {% endunless %}
                 {% unless site.linkedin_username ==  %}
                 <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
-                {% endunless %}
-                {% unless site.github_username ==  %}
-                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-black"><i class="fab fa-github"></i></a>
                 {% endunless %}
                 {% unless site.youtube_channel_id ==  %}
                 <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank" class="has-text-black"><i class="fab fa-youtube"></i></a>
